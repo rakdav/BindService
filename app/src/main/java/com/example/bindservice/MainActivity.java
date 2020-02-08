@@ -42,7 +42,9 @@ public class MainActivity extends AppCompatActivity {
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                String location=locationText.getText().toString();
+                String weather=weatherService.getWeatherToday(location);
+                weatherText.setText(weather);
             }
         });
     }
