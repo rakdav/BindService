@@ -63,5 +63,6 @@ public class WeatherService extends Service {
         weather=weathers[i];
         weatherData.put(keyLovAndDay,weather);
         return weather;
+
     }
 }
